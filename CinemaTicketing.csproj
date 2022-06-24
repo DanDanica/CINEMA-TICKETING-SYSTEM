@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50B3D93C-0351-4D0D-8E5B-D3ED23DE6131}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CinemaTicketing</RootNamespace>
+    <AssemblyName>CinemaTicketing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Avatars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Avatars.Designer.cs">
+      <DependentUpon>Admin_Avatars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboard.Designer.cs">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_EditMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_EditMovie.Designer.cs">
+      <DependentUpon>Admin_EditMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_LoginForm.Designer.cs">
+      <DependentUpon>Admin_LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_LogoutCofirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_LogoutCofirmation.Designer.cs">
+      <DependentUpon>Admin_LogoutCofirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_MovieScheduling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_MovieScheduling.Designer.cs">
+      <DependentUpon>Admin_MovieScheduling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UploadMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UploadMovie.Designer.cs">
+      <DependentUpon>Admin_UploadMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionForm.cs" />
+    <Compile Include="CovidInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CovidInfo.Designer.cs">
+      <DependentUpon>CovidInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRTickets.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTickets.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSTicketing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTicketing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="MovieScheduling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieScheduling.Designer.cs">
+      <DependentUpon>MovieScheduling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieScheduling_Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieScheduling_Calendar.Designer.cs">
+      <DependentUpon>MovieScheduling_Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Portals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Portals.Designer.cs">
+      <DependentUpon>Portals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printing.Designer.cs">
+      <DependentUpon>Printing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Information.Designer.cs">
+      <DependentUpon>User_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Payment.Designer.cs">
+      <DependentUpon>User_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_BookingOfTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_BookingOfTicket.Designer.cs">
+      <DependentUpon>User_BookingOfTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Dashboard.Designer.cs">
+      <DependentUpon>User_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_Seats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Seats.Designer.cs">
+      <DependentUpon>User_Seats.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Avatars.resx">
+      <DependentUpon>Admin_Avatars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Dashboard.resx">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_EditMovie.resx">
+      <DependentUpon>Admin_EditMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_LoginForm.resx">
+      <DependentUpon>Admin_LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_LogoutCofirmation.resx">
+      <DependentUpon>Admin_LogoutCofirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_MovieScheduling.resx">
+      <DependentUpon>Admin_MovieScheduling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UploadMovie.resx">
+      <DependentUpon>Admin_UploadMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CovidInfo.resx">
+      <DependentUpon>CovidInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRTickets.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTickets.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieScheduling.resx">
+      <DependentUpon>MovieScheduling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieScheduling_Calendar.resx">
+      <DependentUpon>MovieScheduling_Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Portals.resx">
+      <DependentUpon>Portals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing.resx">
+      <DependentUpon>Printing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Information.resx">
+      <DependentUpon>User_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Payment.resx">
+      <DependentUpon>User_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_BookingOfTicket.resx">
+      <DependentUpon>User_BookingOfTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Dashboard.resx">
+      <DependentUpon>User_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Seats.resx">
+      <DependentUpon>User_Seats.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DSTicketing.xsc">
+      <DependentUpon>DSTicketing.xsd</DependentUpon>
+    </None>
+    <None Include="DSTicketing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTicketing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSTicketing.xss">
+      <DependentUpon>DSTicketing.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\available.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\restricted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\booked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curtain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\available.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
